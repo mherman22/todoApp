@@ -1,0 +1,65 @@
+*{
+    box-sizing: content-box;
+    padding: 0em;
+}
+a{
+    color: #555;
+    text-decoration: none;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;
+}
+.header{
+    background : green;
+    color: #fff;
+    padding:20px;
+    border-radius: 4px;
+    text-align:center;
+}
+.todo-list{
+    background:grey;
+    border-bottom: 1px #ccc dotted;
+    padding: 10px;
+}
+.btn1{
+    background-color: teal;
+    color: whitesmoke;
+    border: thick;
+    padding: 7px 20px;
+    float: right;
+    cursor: pointer;
+}
+.btn-style:hover{
+    background: #666;
+    flex: 1;
+    background-color: teal;
+    color: whitesmoke;
+    border: thick;
+    padding: 7px 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.input{
+    flex: 10;
+    padding: 10px;
+    border: 3px solid #555;
+    border-bottom: 10px #555 dotted;
+}
+.footer{
+    background-color: black;
+    color: darkgreen;
+    padding: 0em;
+    text-align: center;
+    border-radius: 4px;
+    text-size-adjust: inherit;
+    font-size: inherit;
+
+}
+.form{
+    display: flex;
+}
+.container{
+    padding: 0 1em;
+}
