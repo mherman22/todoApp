@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 class TodoItem extends Component{
     render(){
-        const {id,text } = this.props.todo;
+        const {id,title } = this.props.todo;
         return(
             <div className="todo-list" style={{textDecoration:this.props.todo.completed ? 'line-through' : 'none'}}>
                 <p>
@@ -16,8 +16,8 @@ class TodoItem extends Component{
                     <button className='btn1' onClick={this.props.markComplete.bind(this,id)}>complete</button >
 
 
-                    {/* display this.props.todo.text */}
-                    {text}
+                    {/* display this.props.todo.title */}
+                    {title}
                 </p>
             </div>
         )

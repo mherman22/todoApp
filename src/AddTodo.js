@@ -5,7 +5,7 @@ class AddTodo extends Component{
     constructor(){
         super()
         this.state = {
-            text: ''
+            title: ''
         }
     }
 
@@ -13,8 +13,8 @@ class AddTodo extends Component{
 
     onSubmit = e => {
         e.preventDefault();
-        this.props.addTodo(this.state.text);
-        this.setState({text:''})
+        this.props.addTodo(this.state.title);
+        this.setState({title:''})
 
     }
 
@@ -26,7 +26,7 @@ class AddTodo extends Component{
                     name="text" 
                     placeholder="add your plan for the day..." 
                     className="input" 
-                    value={this.state.text}
+                    value={this.state.title}
                     onChange={this.onChange} 
                 />
                 <input 
